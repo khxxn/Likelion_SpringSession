@@ -16,7 +16,7 @@ public class GuestbookController {
     public GuestbookController(GuestbookService guestbookService){
         this.guestbookService = guestbookService;
     }
-    @GetMapping("/api/guestbook")
+    @GetMapping("/api/guestbooks")
     public List<GuestbookResponse> getGuestbook(){
         return guestbookService.getGuestbook();
     }
